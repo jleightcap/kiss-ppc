@@ -6,8 +6,6 @@ General installation instructions can be found upstream at https://k1ss.org/inst
 
 See [qemu documentation](https://wiki.qemu.org/Documentation/Platforms/PowerPC) for virtual machine support.
 
-Prebuilt [Debian images](https://people.debian.org/~aurel32/qemu/powerpc/) are useful as a development environment.
-
 ## Packages
 core:
 - baselayout
@@ -30,8 +28,13 @@ core:
 - xz
 - zlib
 
-All packages compiled with
+All packages compiled natively on PowerPC with
 ```
 export CFLAGS="-mcpu=native -mtune=native -pipe -0s"
 export CXXFLAGS="-mcpu=native -mtune=native -pipe -0s"
 ```
+
+## See Also
+- dylanaraps [kiss-repo](https://github.com/kisslinux/repo/tree/master/core) (upstream)
+- arvl130 - [kiss32-repo](https://github.com/arvl130/kiss32-repo)
+- jedavies-dev [kiss-ppc64le](https://github.com/jedavies-dev/kiss-ppc64le)
