@@ -1,0 +1,27 @@
+../gcc/configure \
+	--prefix=/usr \
+	--libexecdir=/usr/lib \
+	--mandir=/usr/share/man \
+	--infodir=/usr/share/info \
+	--disable-multilib \
+	--disable-symvers \
+	--disable-libmpx \
+	--disable-libmudflap \
+	--disable-libsanitizer \
+	--disable-werror \
+	--disable-fixed-point \
+	--disable-libstdcxx-pch \
+	--disable-nls \
+	--enable-tls \
+	--enable-checking=release \
+	--disable-sercureplt \
+	--without-included-gettext \
+	--enable-languages=c,c++ \
+	--build=powerpc-linux-musl \
+	--disable-libssp \
+	--enable-deterministic-archives \
+	--enable-libstdcxx-time \
+	--enable-libstdcxx-time=rt \
+	--enable-threads \
+	--with-long-double-64 \
+	--with-system-zlib

@@ -1,0 +1,3 @@
+../musl/configure \
+    --prefix=/usr \
+    --syslibdir=/usr/lib
